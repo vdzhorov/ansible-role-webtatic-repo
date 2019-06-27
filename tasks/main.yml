@@ -1,0 +1,13 @@
+---
+
+- name: Install Webtatic repository (CentOS 6)
+  yum:
+    name: 'https://mirror.webtatic.com/yum/el6/latest.rpm'
+    state: installed
+  when: ansible_distribution == 'CentOS' and ansible_distribution_major_version == '6'
+
+- name: Install Webtatic repository (CentOS 7)
+  yum:
+    name: 'https://mirror.webtatic.com/yum/el7/webtatic-release.rpm'
+    state: installed
+  when: ansible_distribution == 'CentOS' and ansible_distribution_major_version == '7'

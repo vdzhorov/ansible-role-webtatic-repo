@@ -1,0 +1,19 @@
+---
+
+dependencies: []
+
+galaxy_info:
+  author: vdzhorov
+  description: Deploy Webtatic's repository
+  company: "Delta.BG"
+  license: "license (MIT)"
+  min_ansible_version: 2.5
+  platforms:
+    - name: EL
+      versions:
+        - 6
+        - 7
+  galaxy_tags:
+    - linux
+    - webtatic
+    - repository
